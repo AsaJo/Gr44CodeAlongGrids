@@ -1,0 +1,65 @@
+body{
+    width: 1024px;
+    margin-left:20px;
+    margin-right: 20px;
+    display:grid;
+    grid-template-areas:"header header header header"
+                        "main main main aside"
+                        "footer footer footer footer" ;
+    background:gray ;
+
+}
+header{
+    display: grid;
+    grid-area: header;
+    grid-template-areas: "logo navbar navbar navbar";
+    background-color:lightgrey ;
+}
+
+#logo{
+grid-area: logo;
+background-color: lightgoldenrodyellow;
+}
+#navbar {
+    grid-area: navbar;
+    background-color: lightblue;
+    color: rgb(0, 0, 0);
+}
+
+main {
+    display: grid;
+    grid-area: main;
+    grid-template-areas:
+        "intrHeadline"
+        "intrSubText"
+        "articalZon";
+    background-color: lightgray;
+}
+
+#intrHeadline {
+    grid-area: intrHeadline;
+    background-color: rgb(255, 0, 242);
+    color: rgb(0, 0, 0);
+}
+
+#intrSubText {
+    grid-area: intrSubText;
+    background-color: rgb(255, 230, 0);
+    color: rgb(0, 0, 0);
+}
+#articalZon{
+    grid-area:articalZon ;
+    background-color:green ;
+    color:blue;
+}
+aside{
+    grid-area: aside;
+    background-color:blanchedalmond;
+    color:black;
+}
+
+footer{
+    grid-area: footer;
+    background-color: brown;
+    color:white;
+}

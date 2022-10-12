@@ -63,3 +63,77 @@ footer{
     background-color: brown;
     color:white;
 }
+
+
+/*********************** Loginpage***********************/
+
+ div {
+    grid-area: wrapperContent;
+    width: 1024px;
+} 
+
+#div {
+    grid-area: wrapper;
+    /* width: 1024px; */
+}
+
+.wrapperContent {
+    display: grid;
+    grid-template-areas: 'wrapperContent wrapperContent wrapperContent';
+}
+
+.login-page-content {
+    display: grid;
+    grid-template-areas: 'mainhead mainhead mainHead'
+                         'form form form';
+    grid-gap: 10px;
+    background-color: #03f574;
+    padding: 10px;
+}
+
+.mainhead {
+    grid-area: mainhead;
+    height: 40px;
+    margin-left: 29%;
+    margin-top: 4%;
+    text-transform: uppercase;
+    text-align: start;
+}
+
+.form {
+    grid-area: form;
+    margin-left: 20%;
+    margin-top: 2%;
+    
+}
+input {
+    padding-top: 10px;
+    
+}
+input[type=text] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=text]:focus {
+    border: 3px solid rgb(172, 95, 95);
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #b8d0eb;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+img{
+    height: 16px;
+    width: 16px;
+}
